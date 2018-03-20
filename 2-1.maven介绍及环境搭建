@@ -1,0 +1,12 @@
+maven 介绍及环境搭建 ：Maven是基于项目对象模型(POM),可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具
+
+Maven 下载网址 ：Maven.apache.org
+
+Maven 解压后有四个目录即 bin、boot、conf、lib
+bin : 包含mvn的运行脚本，在windows下命令行输入mvn 就会调用该目录下的脚本
+boot : 包含了一个包含类加载器的一个框架，maven使用这个类加载器框架来加载自己的类库
+conf : 包含一些配置文件，如以后经常用到的settings.xml
+lib : 包含maven运行时使用到的类库，出了maven自身的类库还包含了一些maven依赖的一些第三方的类库
+
+maven 需要配置环境变量，配置方法同java配置环境变量
+配置完成后需要进行验证 ：打开命令提示符 --》 输入mvn -v --》 出现相应的maven版本信息以及java版本信息说明配置完成。 
