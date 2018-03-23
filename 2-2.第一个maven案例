@@ -1,0 +1,39 @@
+maven 约定好的目录结构 ：
+        -main
+            -java
+                -package
+        -test
+            -java
+                -package
+        resource
+按此结构创建目录
+   
+   
+groupId 标签里写入包名
+artifacted 标签里写入模块名
+version 标签里写入版本
+
+若加入其它依赖 则添加 dependencies 标签   里面嵌套 dependency 标签  再在 dependency 标签中嵌套上面的三个标签 如
+
+<dependencies>
+
+        <dependency>
+
+            <groupId>junit</groupId>
+
+            <artifactId>junit</artifactId>
+
+            <version>4.10</version>
+
+        </dependency>
+
+    </dependencies>
+    
+在命令行进入根目录（显示src那一层之前的目录） 然后输入 mvn compile
+
+build success 后  输入 mvn test  成功后显示 run : 1（根据你写的类的多少而定） 
+
+此时根目录默认生成一个target的目录 里面的classes文件夹是由java文件生成的class文件  
+                                 surefire-reports文件夹生成的是测试报告      
+                                 
+输入命令 mvn package 在target目录下产生了一个maven01-model-001-SNAPSHOT.jar 文件                                 
