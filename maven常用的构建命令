@@ -1,0 +1,23 @@
+mvn -v       查看maven版本
+mvn compile  编译项目
+mvn test     测试项目
+mvn package  打包项目
+mvn clean    清除项目
+mvn install  将项目发布到本地仓库
+
+若你在类中用到了自己或其他人写的类的时候 出了import 还要在你的 pom.xml 文件中指明其坐标
+如
+ <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+         <dependency>
+            <groupId>com.imooc.maven01</groupId>
+            <artifactId>maven01-model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    
+  
