@@ -17,4 +17,7 @@ src
    package:com.imooc.maven03.service (package=代码所存在的包名)
    
    确认输入 y 后 自动建立目录骨架成功。
+   
+   还可以直接输入命令创建完成maven骨架 ：mvn archetype:generate -DgroupId=com.imooc.maven04 -Dartifacted=maven04-demo 
+                                                             -Dversion=1.0.0SNAPSHOT -Dpackage=com.imooc.maven04.demo
                         
