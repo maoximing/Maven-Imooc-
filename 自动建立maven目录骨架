@@ -1,0 +1,20 @@
+archetype 插件用于创建符合 maven 规定的目录骨架
+
+根据 maven 的规定 目录结构:
+src
+   main
+      java
+          主代码
+          
+在src之上的目录中 如 maven03 这个路径下  使用命令 mvn archetype:generate
+
+因为是第一次运行此命令，此时会进行相应依赖的下载，然后有一个选择的命令:maven-archetype-quickstart version : 选择6
+这时会依次让填写 groupId、artifactId、version、package
+
+如 groupId:com.imooc.maven03 (groupId=组织名，公司网址的反写+项目名)
+   artifactId:maven03-service (artifactId=项目名-模块名)
+   version:1.0.0SNAPSHOT (version=版本号)
+   package:com.imooc.maven03.service (package=代码所存在的包名)
+   
+   确认输入 y 后 自动建立目录骨架成功。
+                        
